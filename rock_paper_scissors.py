@@ -9,6 +9,7 @@ while True:
     print('=============')
     print('Welcome to the rock, paper, scissors')
     print("It's best to 3!!")
+    print("A tie scores 0.")
     print('=============')
 
     print('Pick from the following.')
@@ -22,17 +23,18 @@ while True:
 
         #Main game
         try:
-            pl = int(input('Please pick a move:'))
+            pl = int(input('Please pick a move:')) #User inputs a move
 
             if pl == 4:
-                 print("You quit the game, you're welcome anytime!!")
+                 print("You quit the game, you're welcome anytime!!") #User can quit the game, fully exiting the game
                  exit()
 
             cpu = random.randint(1,3)
 
-            print('You chose: ', pl)
+            print('You chose: ', pl) #Line 33 and 34 displays the user and cpu choice
             print('CPU chose: ', cpu)
 
+            #Game logic
             if pl == cpu:
                 print(f"Both players selected {pl}. It's a tie.")
 
@@ -62,7 +64,7 @@ while True:
                     print('You win!')
                     score_p += 1
                 
-                #Check user/cpu score
+            #Check user/cpu score and diplayes
             if score_p == 3 or score_c == 3:
                 print('')
                 print('Final score board👇')
@@ -73,7 +75,6 @@ while True:
                     print('You won!! 🎉')
                 else:
                     print('Better luck next time. ')
-
                 break 
             
         except ValueError:

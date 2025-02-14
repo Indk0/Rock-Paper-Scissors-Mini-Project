@@ -1,6 +1,7 @@
 # Rock-Paper-Scissors-Mini-Project
 
-### This is a checkpoint project I decided to do from Codedex. Originally the expected output noted by Codedex was simple, as the show in the image below.
+## Overview
+### This is a checkpoint project I decided to do from Codedex. I have decided to use the try and except function like I did in a previous checkpoint project, which was the Area mini-project, originally the expected output shown by Codedex was simple, see the image below.
 
 ![Expected output by Codedex for this checkpoint project](./media/readmeimage/Output.png)
 
@@ -14,7 +15,7 @@
 
 ## Tools Used
 ### [Codedex](https://www.codedex.io/python/checkpoint-project/rock-paper-scissors)  - Used to get project specification.
-### Chat GTP - Used to check for errors and troubleshoot code.
+### ChatGTP - Used to check for errors and troubleshoot code.
 ### [Real Python](https://realpython.com/python-rock-paper-scissors/) - Used to get coding inpiration.
 ### GitHub - Host code and ReadMe file.
 ### VS Code - Create code and ReadMe.

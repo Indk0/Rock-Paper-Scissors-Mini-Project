@@ -23,10 +23,10 @@ while True:
 
         #Main game
         try:
-            pl = int(input('Please pick a move:')) #User inputs a move
+            pl = int(input('Please pick a move: ')) #User inputs a move
 
             if pl == 4:
-                 print("You quit the game, you're welcome anytime!!") #User can quit the game, fully exiting the game
+                 print("You quit the game, you're welcome anytime!!👋") #User can quit the game, fully exiting the game
                  exit()
 
             cpu = random.randint(1,3)
@@ -36,45 +36,45 @@ while True:
 
             #Game logic
             if pl == cpu:
-                print(f"Both players selected {pl}. It's a tie.")
+                print(f"Both players selected {pl}. It's a tie. 🤜🤛")
 
             elif pl == 1:
                 if cpu == 2:
-                    print('CPU wins!')
+                    print('CPU wins! 💻')
                     score_c += 1
 
-                else:
-                    print('You win!')
+                elif cpu == 3:
+                    print('You win! 🎉')
                     score_p += 1
 
             elif pl == 2:
                 if cpu == 1:
-                    print('CPU chose rock. You win!')
+                    print('CPU chose rock. You win! 🎉')
                     score_p += 1
 
-                else:
+                elif cpu == 3:
                     print('You got chopped.😔')
                     score_c += 1
 
             elif pl == 3:
                 if cpu == 1:
-                    print('You lose!')
+                    print('You lose! 💻')
                     score_c += 1
-                else:
-                    print('You win!')
+                elif cpu == 2:
+                    print('You win! 🎉')
                     score_p += 1
                 
             #Check user/cpu score and diplayes
             if score_p == 3 or score_c == 3:
                 print('')
-                print('Final score board👇')
+                print('Final score board 👇')
                 print(f'Your score: {score_p}')
                 print(f'CPU score: {score_c}')
                 
                 if score_p == 3:
                     print('You won!! 🎉')
                 else:
-                    print('Better luck next time. ')
+                    print('Better luck next time. 💻')
                 break 
             
         except ValueError:
@@ -87,6 +87,6 @@ while True:
             break
     else:
             print('The game has reset, enjoy!')
-            score_c: 0
-            score_p: 0
+            score_c = 0
+            score_p = 0
         

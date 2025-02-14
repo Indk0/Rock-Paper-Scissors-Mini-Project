@@ -16,6 +16,8 @@
 ### [Codedex](https://www.codedex.io/python/checkpoint-project/rock-paper-scissors)  - Used to get project specification.
 ### Chat GTP - Used to check for errors and troubleshoot code.
 ### [Real Python](https://realpython.com/python-rock-paper-scissors/) - Used to get coding inpiration.
+### GitHub - Host code and ReadMe file.
+### VS Code - Create code and ReadMe.
 
 ## Future Improvements
 * Create a front end and publish a website.

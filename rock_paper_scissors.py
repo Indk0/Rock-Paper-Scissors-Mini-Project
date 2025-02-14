@@ -24,6 +24,10 @@ while True:
         try:
             pl = int(input('Please pick a move:'))
 
+            if pl == 4:
+                 print("You quit the game, you're welcome anytime!!")
+                 exit()
+
             cpu = random.randint(1,3)
 
             print('You chose: ', pl)
@@ -59,19 +63,21 @@ while True:
                     score_p += 1
                 
                 #Check user/cpu score
+            if score_p == 3 or score_c == 3:
+                print('')
+                print('Final score board👇')
+                print(f'Your score: {score_p}')
+                print(f'CPU score: {score_c}')
+                
                 if score_p == 3:
-                      print(f'Your score: {score_p}, you won!!')
-                      break
-                elif score_c == 3:
-                    print(f'CPU score:{score_c}, better luck next time.')
-                    break
+                    print('You won!! 🎉')
+                else:
+                    print('Better luck next time. ')
 
-            else:
-                print("You quit the game, you're welcome anytime!!")
-                break
+                break 
             
         except ValueError:
-                print('Invalid input, please try again.')
+            print('Invalid input, please try again.')
                 
 
     play_again = input("Play again? (Y/N): ")    
@@ -79,6 +85,7 @@ while True:
             print('You want to touch grass? Enjoy 🏡')
             break
     else:
-         score_c: 0
-         score_p: 0
+            print('The game has reset, enjoy!')
+            score_c: 0
+            score_p: 0
         

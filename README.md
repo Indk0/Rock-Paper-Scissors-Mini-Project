@@ -20,5 +20,5 @@
 ### VS Code - Create code and ReadMe.
 
 ## Future Improvements
-* Create a front end and publish a website.
+* Create a front-end and publish a website.
 * Ask the user how many times they want to play, with a limit, this will be tracked using the score system like in this iteration of the code.

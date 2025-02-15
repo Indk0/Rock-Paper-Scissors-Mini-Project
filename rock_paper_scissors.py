@@ -25,6 +25,10 @@ while True:
         try:
             pl = int(input('Please pick a move: ')) #User inputs a move
 
+            if pl < 1 or pl > 4:  # Check if the input is outside the valid range
+                    print("Invalid choice, please pick between 1 and 4.")
+                    continue  # Restart the loop
+
             if pl == 4:
                  print("You quit the game, you're welcome anytime!!👋") #User can quit the game, fully exiting the game
                  exit()
